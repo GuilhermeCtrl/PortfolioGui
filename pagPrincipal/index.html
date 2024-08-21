@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+
+        <div class="sobreMim">
+            <img class="minhaFoto" src="../images/Imagem1.png" alt="">
+            <h2 id="apresentacao" class="apresentacao">Olá, meu nome é Guilherme!</h1>
+                <p class="minhaBio">Atualmente, estou estudando <span style="color: rgb(85, 255, 0);">PYTHON</span>, mas tenho conhecimento sobre <span style="color: rgb(255, 157, 0);">HTML </span>, <span style="color: rgb(0, 200, 255);">CSS</span> e <span style="color: yellow;">JAVASCRIPT</span>!</p>
+    </div>
+
+    <div class="meusProjetos">
+
+        <div class="projetoSenha">
+            <h2>Site de Senha Aleatória</h2>
+            <img class="sitePassword" src="../images/Print_RandomPasswordSite.png" alt="">
+        </div>
+
+        <div class="projetoScoreboard">
+            <h2>Site Scoreboard</h2>
+            <img class="siteScoreboard" src="../images/Print_ScoreboardSite.png" alt="">
+        </div>
+        <div class="projetoSeila">
+        
+
+        </div>
+        <button onclick="abrirSobreMim()" class="botaoMim">Mais sobre mim</button>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
+
+<!-- Página Sobre Mim (inicialmente oculta) -->
+<div class="modal" id="sobreMimModal">
+    <div class="caixaCentral">
+        <h1 class="tituloSobreMim"><span style="color: #ffff57;">Muito Prazer!</span></h1>
+        <p class="textoSobreMim">Me chamo Guilherme Antônio de Aquino Conceição! <br><br> Tenho 18 anos e recentemente entrei no ramo de programação, por sempre ser apaixonado por tecnologias variadas, me encantei e muito em saber como tudo era feito, desde jogos, design, FrontEnd, BackEnd, mas o que realmente me encantou, foi a possibilidade de ser um <span style="color: rgb(4, 251, 4);">Full Stack!</span> <br><br>Entrei na faculdade de engenharia da computação no ínicio do ano, logo após terminar meus estudos do ensino médio, com o intuito de poder finalmente estudar aquilo que eu realmente gostava, me senti um pouco perdido em relação ao que começar, mas no fim, encontrei meu caminho com ajuda de profissionais experientes no mercado, e assim, decidi me tornar um programador Full Stack, poder administrar tanto o Front quanto o Back deixou meus olhos brilhando, e assim, comecei meus estudos. <br><br>Como já tinha uma mera noção de HTML e CSS, decidi partir para o JavaScript, e nessa linguagem que me apaixonei ainda mais por programação, logo após terminar o curso, decidi então seguir meu RoadMap e partir para o Python, que é a linguagem que atualmente me encontro! <br><br>Atualmente, me encontro livre para o mercado de trabalho, tenho um enorme sonho de poder construir a minha carreira e poder fazer uma forte network.</p>
+        <button onclick="fecharSobreMim()" class="botaoVoltar">Voltar aos projetos</button>
+    </div>
+</div>

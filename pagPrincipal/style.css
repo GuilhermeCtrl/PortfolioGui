@@ -1,0 +1,226 @@
+@font-face { 
+    font-family: Karla; 
+    src: url('../Karla/Karla-Italic-VariableFont_wght.ttf'); 
+}
+
+body {
+    background-color: #000912;
+    color: #fff6ed;
+    margin: 0;
+    font-family: Karla, sans-serif;
+}
+
+.textMeio, .sobreMim, .projetoSeila {
+    text-align: center;
+}
+
+.apresentacao {
+    font-family: Karla;
+}
+
+.minhaFoto {
+    height: 8em;
+    max-width: 100%;
+    border-radius: 50%; 
+}
+
+.minhaBio {
+    font-family: Karla;
+    font-size: 1.1em;
+    margin-top: -0.6em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 30em; 
+    text-align: center;
+}
+
+.meusProjetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3em;
+    gap: 2em;
+}
+
+.projetoSenha, .projetoScoreboard, .projetoSeila {
+    text-align: center;
+    flex: 1 1 100%; 
+    max-width: 40em; 
+}
+
+.sitePassword, .siteScoreboard, .projetoSeila {
+    width: 100%;
+    border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+h2 {
+    font-family: Karla;
+    font-size: 1.3em;
+}
+
+/* gfarantir responsividade */
+@media (max-width: 768px) {
+    .minhaFoto {
+        height: 6em; 
+    }
+
+    .meusProjetos {
+        flex-direction: column; 
+    }
+
+    .projetoSenha, .projetoScoreboard, .projetoSeila {
+        max-width: 100%; 
+    }
+
+    .sitePassword, .siteScoreboard, .projetoSeila {
+        height: auto; 
+    }
+}
+
+@media (max-width: 480px) {
+    .minhaFoto {
+        height: 5em; 
+    }
+
+    .minhaBio {
+        font-size: 1em; 
+        width: 95%; 
+    }
+
+    .meusProjetos {
+        gap: 1em; 
+    }
+}
+
+
+.botaoMim, .botaoVoltar{
+    border-radius: 5px;
+    width: 9em;
+    height: 3.0em;
+    background-color: #fff6ed;
+    border-radius: 7px;
+    color: #000000;
+    font-size: 1.12rem;
+    font-family: karla;
+    margin-top: 6em;
+    font-weight: bold;
+}
+
+.botaoVoltar{
+    text-align: center;
+    align-items: center;
+    margin-left: 12em;
+    margin-top: 4em;
+}
+
+
+/* CSS Adicional para o Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); 
+    z-index: 1000;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.caixaCentral {
+    background-color: #000912;
+    color: #fff6ed;
+    padding: 20px;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px;
+    transform: translateY(100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+.modal.show .caixaCentral {
+    transform: translateY(0);
+}
+
+p {
+    font-size: 1.3em;
+    width: 25em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tituloSobreMim{
+    align-items: center;
+    text-align: center;
+}
+
+.textoSobreMim{
+    text-align: center;
+}
+
+/* Responsividade para a Caixa Central do Modal */
+@media (max-width: 768px) {
+    .caixaCentral {
+        width: 90%; 
+        max-height: 80vh; /* Limita a altura da caixa central a 80% da altura da tela */
+        overflow-y: auto; /* Permite rolar o conteúdo verticalmente */
+    }
+
+    p {
+        font-size: 1.1em;
+        width: 80%; 
+    }
+
+    .botaoMim {
+        width: 7em;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .caixaCentral {
+        width: 95%; 
+        max-height: 80vh; /* Limita a altura da caixa central a 80% da altura da tela */
+        overflow-y: auto; /* Permite rolar o conteúdo verticalmente */
+    }
+
+    p {
+        font-size: 1em;
+        width: 90%; 
+    }
+
+    .botaoMim {
+        width: 6em;
+        font-size: 0.8rem;
+    }
+}
+
+/* Para telas maiores que 768px, também é bom garantir que a rolagem funcione */
+.caixaCentral {
+    max-height: 80vh; /* Limita a altura da caixa central a 80% da altura da tela */
+    overflow-y: auto; /* Permite rolar o conteúdo verticalmente */
+}
+
+/* Ocultar a barra de rolagem, mas ainda permitir a rolagem */
+.caixaCentral {
+    max-height: 80vh; /* Limita a altura da caixa central a 80% da altura da tela */
+    overflow-y: scroll; /* Permite a rolagem vertical */
+    scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
+    -ms-overflow-style: none; /* Oculta a barra de rolagem no IE e Edge */
+}
+
+.caixaCentral::-webkit-scrollbar {
+    display: none; /* Oculta a barra de rolagem no Chrome, Safari e Opera */
+}
