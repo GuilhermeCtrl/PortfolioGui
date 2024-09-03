@@ -194,8 +194,8 @@ p {
     }
 
     .botaoMim {
-        width: 7em;
-        font-size: 0.9rem;
+        width: 10em;
+        font-size: 1rem;
     }
 }
 
@@ -217,13 +217,12 @@ p {
     }
 }
 
-/* Para telas maiores que 768px */
 .caixaCentral {
     max-height: 80vh; 
     overflow-y: auto; 
 }
 
-/* Ocultar a barra de rolagem, mas ainda permitir a rolagem */
+/* Ocultar a barra de rolagem*/
 .caixaCentral {
     max-height: 80vh; 
     overflow-y: scroll; 
