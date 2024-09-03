@@ -103,21 +103,31 @@ h2 {
     border-radius: 5px;
     width: 9em;
     height: 3.0em;
-    background-color: #fff6ed;
+    background-color: #ffffff;
     border-radius: 7px;
     color: #000000;
     font-size: 1.12rem;
     font-family: karla;
     margin-top: 6em;
     font-weight: bold;
+    text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
 }
 
 .botaoVoltar{
-    text-align: center;
-    align-items: center;
-    margin-left: 12em;
-    margin-top: 4em;
-}
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 4em;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
 
 
 /* CSS Adicional para o Modal */
@@ -174,8 +184,8 @@ p {
 @media (max-width: 768px) {
     .caixaCentral {
         width: 90%; 
-        max-height: 80vh; /* Limita a altura da caixa central a 80% da altura da tela */
-        overflow-y: auto; /* Permite rolar o conteúdo verticalmente */
+        max-height: 80vh; 
+        overflow-y: auto; 
     }
 
     p {
@@ -192,8 +202,8 @@ p {
 @media (max-width: 480px) {
     .caixaCentral {
         width: 95%; 
-        max-height: 80vh; /* Limita a altura da caixa central a 80% da altura da tela */
-        overflow-y: auto; /* Permite rolar o conteúdo verticalmente */
+        max-height: 80vh; 
+        overflow-y: auto; 
     }
 
     p {
@@ -207,20 +217,20 @@ p {
     }
 }
 
-/* Para telas maiores que 768px, também é bom garantir que a rolagem funcione */
+/* Para telas maiores que 768px */
 .caixaCentral {
-    max-height: 80vh; /* Limita a altura da caixa central a 80% da altura da tela */
-    overflow-y: auto; /* Permite rolar o conteúdo verticalmente */
+    max-height: 80vh; 
+    overflow-y: auto; 
 }
 
 /* Ocultar a barra de rolagem, mas ainda permitir a rolagem */
 .caixaCentral {
-    max-height: 80vh; /* Limita a altura da caixa central a 80% da altura da tela */
-    overflow-y: scroll; /* Permite a rolagem vertical */
-    scrollbar-width: none; /* Oculta a barra de rolagem no Firefox */
-    -ms-overflow-style: none; /* Oculta a barra de rolagem no IE e Edge */
+    max-height: 80vh; 
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
 }
 
 .caixaCentral::-webkit-scrollbar {
-    display: none; /* Oculta a barra de rolagem no Chrome, Safari e Opera */
+    display: none; 
 }
