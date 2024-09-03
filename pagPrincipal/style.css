@@ -1,6 +1,6 @@
 @font-face { 
     font-family: Karla; 
-    src: url('../Karla/Karla-Italic-VariableFont_wght.ttf'); 
+    src: url('Karla/Karla-Italic-VariableFont_wght.ttf'); 
 }
 
 body {
